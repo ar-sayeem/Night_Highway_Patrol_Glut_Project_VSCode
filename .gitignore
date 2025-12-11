@@ -1,0 +1,44 @@
+# Compiled binaries
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Debug files
+*.pdb
+*.ilk
+
+# Static libraries
+*.a
+*.lib
+
+# Dynamic libraries
+*.dll
+*.so
+*.dylib
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Build directories
+build/
+debug/
+release/
+
+# Windows specific
+Thumbs.db
+Desktop.ini
+
+# VS Code specific (optional)
+.vscode/settings.json
+
+# Backup files
+*.bak
+
+# Log files
+*.log

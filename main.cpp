@@ -393,11 +393,11 @@ void drawCivilianCar(const Car& car) {
     if (car.type == 1) {
         glColor3f(0.95f, 0.95f, 0.95f);
         for (int i = 0; i < 3; ++i) {
-            float wx = car.x - w * 0.35f + i * (w * 0.35f);
+            float wx = car.x - w * 0.3f + i * (w * 0.3f);
             glBegin(GL_QUADS);
             glVertex2f(wx, car.y + h * 0.5f);
-            glVertex2f(wx + w * 0.2f, car.y + h * 0.5f);
-            glVertex2f(wx + w * 0.2f, car.y + h * 0.62f);
+            glVertex2f(wx + w * 0.15f, car.y + h * 0.5f);
+            glVertex2f(wx + w * 0.15f, car.y + h * 0.62f);
             glVertex2f(wx, car.y + h * 0.62f);
             glEnd();
         }
@@ -406,16 +406,16 @@ void drawCivilianCar(const Car& car) {
     // Tail lights
     glColor3f(0.7f, 0.05f, 0.05f);
     glBegin(GL_QUADS);
-    glVertex2f(car.x - w * 0.42f, car.y + h * 0.12f);
-    glVertex2f(car.x - w * 0.37f, car.y + h * 0.12f);
-    glVertex2f(car.x - w * 0.37f, car.y + h * 0.22f);
-    glVertex2f(car.x - w * 0.42f, car.y + h * 0.22f);
+    glVertex2f(car.x - w * 0.38f, car.y + h * 0.12f);
+    glVertex2f(car.x - w * 0.32f, car.y + h * 0.12f);
+    glVertex2f(car.x - w * 0.32f, car.y + h * 0.22f);
+    glVertex2f(car.x - w * 0.38f, car.y + h * 0.22f);
     glEnd();
     glBegin(GL_QUADS);
-    glVertex2f(car.x + w * 0.37f, car.y + h * 0.12f);
-    glVertex2f(car.x + w * 0.42f, car.y + h * 0.12f);
-    glVertex2f(car.x + w * 0.42f, car.y + h * 0.22f);
-    glVertex2f(car.x + w * 0.37f, car.y + h * 0.22f);
+    glVertex2f(car.x + w * 0.32f, car.y + h * 0.12f);
+    glVertex2f(car.x + w * 0.38f, car.y + h * 0.12f);
+    glVertex2f(car.x + w * 0.38f, car.y + h * 0.22f);
+    glVertex2f(car.x + w * 0.32f, car.y + h * 0.22f);
     glEnd();
 }
 
