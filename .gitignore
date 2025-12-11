@@ -18,15 +18,29 @@
 # Dynamic libraries
 *.dll
 *.so
+*.dylib
 
 # Game data files
 highscore.txt
-*.dylib
 
 # Temporary files
 *.tmp
 *.temp
 *~
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# IDE/Editor files
+.vscode/settings.json
+.vscode/.ropeproject
+
+# Build directories
+build/
+dist/
+output/
 
 # Build directories
 build/
